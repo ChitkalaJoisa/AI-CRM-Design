@@ -43,16 +43,23 @@ AI:
 ## Installation
 1st Terminal(Backend):
 cd backend
+
 pip install -r requirements.txt
+
 uvicorn app.main:app --reload
 
 2nd Terminal(Frontend):
 cd frontend
+
 npm install
+
 npm run dev
 
 # .env (IMP FILE CREATION IN BACKEND FOLDER)
-create a file named (.env) in the backend folder
-GROQ_API_KEY=paste_your_groq_api_key
-MODEL_NAME=llama-3.3-70b-versatile
-DATABASE_URL=postgresql://postgres:password@localhost:5432/hcpcrm
+create a file named (.env) in the backend folder and paste this code
+
+# GROQ_API_KEY=paste_your_groq_api_key
+
+# MODEL_NAME=llama-3.3-70b-versatile
+
+# DATABASE_URL=postgresql://postgres:password@localhost:5432/hcpcrm
